@@ -1,5 +1,9 @@
 # Préparation du Projet TechConf 2024
 
+## Nom des membres
+Chrislaine Gloria Moukam Nana
+Ricarka Kuntuala Julio
+
 ## 📋 Description du Projet
 
 TechConf 2024 est un site web moderne pour une conférence technologique organisée les diplomés du programme programmation informatique sur une durée de trois jours. Elle a pour but de regrouper les diplomés et les étudianys du programme dans l'optique d'établir le relationnel et d'effectuer un réseautage dans le marché de l'emploi.
