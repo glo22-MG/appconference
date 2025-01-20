@@ -19,6 +19,12 @@ const speakers = [
     image: "/images/speakers/speaker3.webp",
     topic: "Design System à grande échelle",
   },
+  {
+    name: "Viviane Banks",
+    role: "Data scientist @ IBM",
+    image: "/images/speakers/speaker4.webp",
+    topic: "L'impact du Big Data dans le monde",
+  },
  
 ];
 
