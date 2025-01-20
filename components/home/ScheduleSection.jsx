@@ -44,7 +44,7 @@ const schedule = [
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Programme</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Deux jours intenses de conférences, ateliers et networking.
+              Trois jours intenses de conférences, ateliers et networking.
             </p>
           </div>
   

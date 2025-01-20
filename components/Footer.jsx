@@ -63,7 +63,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-            <p>© 2024 TechConf. Tous droits réservés.</p>
+            <p>© 2025 TechConf. Tous droits réservés.</p>
           </div>
         </div>
       </footer>

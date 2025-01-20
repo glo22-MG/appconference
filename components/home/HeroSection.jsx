@@ -7,7 +7,7 @@ export default function HeroSection() {
     <div className="relative bg-gradient-to-r from-primary/90 to-secondary overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="/images/image conf.webp"
+          src="/images/techimage.webp"
           alt="Conference background"
           className="object-cover mix-blend-overlay"
           fill
@@ -28,7 +28,7 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <div className="flex items-center">
               <Calendar className="h-6 w-6 mr-2" />
-              <span>15-16 Juin 2024</span>
+              <span>15-17 Juin 2025</span>
             </div>
             <div className="flex items-center">
               <MapPin className="h-6 w-6 mr-2" />
