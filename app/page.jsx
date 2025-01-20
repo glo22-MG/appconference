@@ -1,11 +1,13 @@
-import Image from 'next/image';
-import styles from './page.module.css';
+import HeroSection from "@/components/home/HeroSection";
+import SpeakersSection from "@/components/home/SpeakersSection";
+import ScheduleSection from "@/components/home/ScheduleSection";
+
 export default function Home() {
-    return (
-        <main className={styles.main}>
-        <div className={styles.welcome}>
-            Soyez la bienvenue sur conf-app
-        </div>
-        </main>
-    );
+  return (
+    <>
+      <HeroSection />
+      <SpeakersSection />
+      <ScheduleSection />
+    </>
+  );
 }
