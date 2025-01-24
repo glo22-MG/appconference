@@ -1,9 +1,10 @@
-"use client"
- 
+// Définition de composants réutilisables pour une carte avec différentes sections (Header, Title, Description, Content, Footer)
+// Chaque composant utilise `forwardRef` pour pouvoir recevoir une référence `ref` et appliquer des classes CSS via `cn`.
+
 import * as React from "react"
- 
 import { cn } from "@/lib/utils"
- 
+
+// Composant principal "Card" avec des styles de base pour une carte
 const Card = React.forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
@@ -15,7 +16,8 @@ const Card = React.forwardRef(({ className, ...props }, ref) => (
   />
 ))
 Card.displayName = "Card"
- 
+
+// Header de la carte, avec des styles pour un titre et une disposition en colonne
 const CardHeader = React.forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
@@ -24,7 +26,8 @@ const CardHeader = React.forwardRef(({ className, ...props }, ref) => (
   />
 ))
 CardHeader.displayName = "CardHeader"
- 
+
+// Titre de la carte, avec des styles pour le texte
 const CardTitle = React.forwardRef(({ className, ...props }, ref) => (
   <h3
     ref={ref}
@@ -36,7 +39,8 @@ const CardTitle = React.forwardRef(({ className, ...props }, ref) => (
   />
 ))
 CardTitle.displayName = "CardTitle"
- 
+
+// Description de la carte, avec des styles pour le texte explicatif
 const CardDescription = React.forwardRef(({ className, ...props }, ref) => (
   <p
     ref={ref}
@@ -45,12 +49,14 @@ const CardDescription = React.forwardRef(({ className, ...props }, ref) => (
   />
 ))
 CardDescription.displayName = "CardDescription"
- 
+
+// Contenu de la carte, avec des styles pour la disposition interne
 const CardContent = React.forwardRef(({ className, ...props }, ref) => (
   <div ref={ref} className={cn("p-6 pt-0", className)} {...props} />
 ))
 CardContent.displayName = "CardContent"
- 
+
+// Pied de page de la carte, avec des styles pour un alignement et une disposition horizontale
 const CardFooter = React.forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
@@ -59,5 +65,6 @@ const CardFooter = React.forwardRef(({ className, ...props }, ref) => (
   />
 ))
 CardFooter.displayName = "CardFooter"
- 
+
+// Exportation des composants pour les utiliser ailleurs dans l'application
 export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent }
