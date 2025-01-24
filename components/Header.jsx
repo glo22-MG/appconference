@@ -3,7 +3,6 @@
 //Le composant principal qui inclut tous les autres composants.
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
 import Logo from "./headercomponents/Logo";
 import DesktopNavigation from "./headercomponents/DesktopNavigation";
 import MobileNavigation from "./headercomponents/MobileNavigation";
