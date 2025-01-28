@@ -11,6 +11,7 @@ export default function Footer() {
           <NewsLetterFooter />
           <ContactFooter />
           <LienRapideFooter />
+          
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
           <p>© 2025 TechConf. Tous droits réservés.</p>
