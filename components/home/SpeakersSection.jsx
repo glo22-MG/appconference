@@ -1,32 +1,7 @@
-import Image from "next/image";
 
-const speakers = [
-  {
-    name: "Marie Dubois",
-    role: "CTO @ TechCorp",
-    image: "/images/speakers/speaker2.webp",
-    topic: "L'avenir de l'IA",
-  },
-  {
-    name: "Thomas Martin",
-    role: "Lead Developer @ StartupXYZ",
-    image: "/images/speakers/speaker1.webp",
-    topic: "Architecture Cloud Native",
-  },
-  {
-    name: "Sophie Bernard",
-    role: "Product Manager @ BigTech",
-    image: "/images/speakers/speaker3.webp",
-    topic: "Design System à grande échelle",
-  },
-  {
-    name: "Viviane Banks",
-    role: "Data scientist @ IBM",
-    image: "/images/speakers/speaker4.webp",
-    topic: "L'impact du Big Data dans le monde",
-  },
- 
-];
+"use client";
+import speakersData from "@/public/json/speakers.json";
+import DisplaySpeaker from "./DisplaySpeaker";
 
 export default function SpeakersSection() {
   return (
@@ -40,25 +15,8 @@ export default function SpeakersSection() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {speakers.map((speaker) => (
-            <div
-              key={speaker.name}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
-            >
-              <div className="relative h-48 w-full">
-                <Image
-                  src={speaker.image}
-                  alt={speaker.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-bold text-xl mb-2">{speaker.name}</h3>
-                <p className="text-gray-600 mb-2">{speaker.role}</p>
-                <p className="text-primary font-medium">{speaker.topic}</p>
-              </div>
-            </div>
+          {speakersData.speakers.map((speaker) => (
+            <DisplaySpeaker key={`${speaker.name}-${speaker.role}`} speaker={speaker} />
           ))}
         </div>
       </div>
