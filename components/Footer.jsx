@@ -6,7 +6,7 @@ export default function Footer() {
             <div>
               <h3 className="text-lg font-semibold mb-4">À propos</h3>
               <p className="text-gray-400">
-                TechConf 2024 est l'événement incontournable pour les passionnés de
+                TechConf 2025 est l'événement incontournable pour les passionnés de
                 technologie et d'innovation.
               </p>
             </div>
