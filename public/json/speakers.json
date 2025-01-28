@@ -1,0 +1,28 @@
+{
+    "speakers": [
+      {
+        "name": "Marie Dubois",
+        "role": "CTO @ TechCorp",
+        "image": "/images/speakers/speaker2.webp",
+        "topic": "L'avenir de l'IA"
+      },
+      {
+        "name": "Thomas Martin",
+        "role": "Lead Developer @ StartupXYZ",
+        "image": "/images/speakers/speaker1.webp",
+        "topic": "Architecture Cloud Native"
+      },
+      {
+        "name": "Sophie Bernard",
+        "role": "Product Manager @ BigTech",
+        "image": "/images/speakers/speaker3.webp",
+        "topic": "Design System à grande échelle"
+      },
+      {
+        "name": "Viviane Banks",
+        "role": "Data scientist @ IBM",
+        "image": "/images/speakers/speaker4.webp",
+        "topic": "L'impact du Big Data dans le monde"
+      }
+    ]
+  }
