@@ -5,7 +5,7 @@ export default function AboutSection() {
         <h3 className="text-lg font-semibold mb-4">À propos</h3>
         <p className="text-gray-400">
           TechConf 2024 est l&apos;événement incontournable pour les passionnés de
-          technologie et d&aposinnovation.
+          technologie et d&apos;innovation.
         </p>
       </div>
     );

@@ -9,11 +9,11 @@ export default function ContentHero(){
                   <h1 className="text-4xl sm:text-6xl font-bold mb-6">
                     TechConf 2024
                     <br />
-                    <span className="text-accent">L&aposinnovation en action</span>
+                    <span className="text-accent">L&apos;innovation en action</span>
                   </h1>
                   <p className="text-xl mb-8 text-gray-100">
                     Rejoignez plus de 1000 experts et passionnés de technologie pour deux
-                    jours d&apos;échanges, de découvertes et d&aposinspiration.
+                    jours d&apos;échanges, de découvertes et d&apos;inspiration.
                   </p>
         
                   <Calendars/>
