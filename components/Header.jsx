@@ -3,13 +3,12 @@
 //Le composant principal qui inclut tous les autres composants.
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
 import Logo from "./headercomponents/Logo";
 import DesktopNavigation from "./headercomponents/DesktopNavigation";
 import MobileNavigation from "./headercomponents/MobileNavigation";
 import MenuButton from "./headercomponents/MenuButton";
 
-export default function Header() {
+export default function Header({ changePage }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -20,14 +19,14 @@ export default function Header() {
           <Logo />
 
           {/* Desktop Navigation */}
-          <DesktopNavigation />
+          <DesktopNavigation changePage={changePage} />
 
           {/* Mobile menu button */}
           <MenuButton isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && <MobileNavigation setIsMenuOpen={setIsMenuOpen} />}
+        {isMenuOpen && <MobileNavigation changePage={changePage} setIsMenuOpen={setIsMenuOpen} />}
       </nav>
     </header>
   );

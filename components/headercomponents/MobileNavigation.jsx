@@ -1,10 +1,10 @@
-export default function MobileNavigation({ setIsMenuOpen }) {
+export default function MobileNavigation({ setIsMenuOpen, changePage }) {
     const navigation = [
-      { name: "Accueil", href: "/" },
-      { name: "Programme", href: "#schedule" },
-      { name: "Speakers", href: "#speakers" },
-      { name: "Sponsors", href: "#sponsors" },
-      { name: "Contact", href: "#contact" },
+      { name: "Accueil", href: "home" },
+      { name: "Programme", href: "programme" },
+      { name: "Speakers", href: "speakers" },
+      { name: "Sponsors", href: "sponsors" },
+      { name: "Contact", href: "contact" },
     ];
 
     // Affiche la navigation pour les écrans mobiles.
@@ -15,9 +15,12 @@ export default function MobileNavigation({ setIsMenuOpen }) {
           {navigation.map((item) => (
             <a
               key={item.name}
-              href={item.href}
+              href="#"
+              onClick={() => {
+                setIsMenuOpen(false);
+                changePage(item.href);  // Change la page active
+              }}
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50"
-              onClick={() => setIsMenuOpen(false)}
             >
               {item.name}
             </a>
