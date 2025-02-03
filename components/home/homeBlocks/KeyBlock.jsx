@@ -3,7 +3,7 @@
 import { Calendar, Clock, MapPin, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
-export default function AboutBlock() {
+export default function KeyBlock() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <Card className="p-6">

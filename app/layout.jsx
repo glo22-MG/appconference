@@ -1,23 +1,43 @@
+"use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useState } from "react";
+
+import Home from "./page";
+import Programme from "./programme/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "TechConf 2024 - La conférence tech de l'année",
-  description:
-    "Rejoignez-nous pour la plus grande conférence technologique de l'année. Découvrez les dernières innovations et rencontrez des experts du monde entier.",
-};
+//export const metadata = {
+ // title: "TechConf 2024 - La conférence tech de l'année",
+ // description:
+   // "Rejoignez-nous pour la plus grande conférence technologique de l'année. Découvrez les dernières innovations et rencontrez des experts du monde entier.",
+//};
 
-export default function RootLayout({ children }) {
+export default function RootLayout() {
+  const [page, setPage] = useState("home");
+
+  const renderPage = () => {
+    switch (page) {
+      case "home":
+        return <Home />;
+      case "programme":
+        return <Programme />;
+      case "speakers":
+        return <Speakers />;
+      
+      default:
+        return <Home />;
+    }
+  };
   return (
     <html lang="fr">
       <body className={inter.className}>
-        <Header />
-        <main className="min-h-screen pt-16">{children}</main>
-        <Footer />
+        <Header changePage={setPage} currentPage={page} />
+        <main className="min-h-screen pt-16">{renderPage()}</main>
+        <Footer changePage={setPage} />
       </body>
     </html>
   );
