@@ -2,23 +2,23 @@
     "jour1": [
       {
         "time": "9h00 - 11h00",
-        "title": "La Robustesse Psychologique",
-        "speaker": "Dr. Marie Laurent",
+        "title": "L'avenir de l'ia",
+        "speaker": "Dr. Marie Dubois",
         "type": "conference",
         "room": "Salle Principale",
-        "track": "Psychologie",
-        "description": "Saviez-vous qu'il existe un ensemble d'attitudes et d'habiletés qui procure le courage, la motivation et les ressources nécessaires pour passer à l'action de manière efficace face aux situations stressantes? C'est la robustesse psychologique. Apprenez comment la développer et comment influencer votre biologie, vos hormones et vos neurotransmetteurs par d'autres moyens que la médication, afin de favoriser le fonctionnement optimal de votre organisme.",
+        "track": "Intelligence artificielle",
+        "description": "L'impact de l'IA sur le marché du travail représente une transformation majeure de notre société, créant à la fois des opportunités et des défis d'adaptation. Cette conférence explorera comment l'intelligence artificielle redéfinit les métiers traditionnels tout en faisant émerger de nouvelles professions comme les Prompt Engineers ou les spécialistes en éthique de l'IA.",
         "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80",
         "capacity": 200
       },
       {
         "time": "11h30 - 13h00",
-        "title": "Gestion du Stress",
-        "speaker": "Dr. Jean Dupont",
+        "title": "Architecture Cloud Native",
+        "speaker": "Dr. Thomas Martin",
         "type": "workshop",
         "room": "Salle 2",
         "track": "Santé",
-        "description": "Atelier interactif sur les techniques de gestion du stress et de relaxation.",
+        "description": "Atelier interactif sur l'architecture du cloud Native.",
         "image": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&q=80",
         "capacity": 50
       }
@@ -26,12 +26,12 @@
     "jour2": [
       {
         "time": "9h00 - 10h30",
-        "title": "Les Neurosciences et le Comportement",
-        "speaker": "Prof. Elise Martin",
+        "title": "L'impact du Big Data dans le monde",
+        "speaker": "Prof. Viviane Banks",
         "type": "panel",
         "room": "Salle Principale",
-        "track": "Neurosciences",
-        "description": "Discussion sur l'impact des neurosciences sur les comportements humains.",
+        "track": "Big Data",
+        "description": "Discussion sur l'impact du Big Data et présentation des différents métiers en 2025.",
         "image": "https://images.unsplash.com/photo-1521747116042-5a810fda9664?auto=format&fit=crop&q=80",
         "capacity": 100
       }
@@ -39,12 +39,12 @@
     "jour3": [
       {
         "time": "10h00 - 12h00",
-        "title": "Mindfulness et Bien-être",
+        "title": "Design System et IA : La nouvelle ère de la conception d'interfaces adaptatives",
         "speaker": "Dr. Sophie Bernard",
         "type": "conference",
         "room": "Salle 3",
-        "track": "Bien-être",
-        "description": "Apprenez comment la pratique de la pleine conscience peut améliorer votre bien-être général.",
+        "track": "Design System et IA",
+        "description": "Cette conférence explorera comment l'intelligence artificielle révolutionne la création et la maintenance des Design Systems, permettant une personnalisation en temps réel des interfaces selon le contexte utilisateur. Nous verrons comment les composants deviennent intelligents",
         "image": "https://images.unsplash.com/photo-1496042022028-78c2b9e0a4f1?auto=format&fit=crop&q=80",
         "capacity": 150
       }
