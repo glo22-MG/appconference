@@ -6,11 +6,13 @@ import SpeakerSection4 from "@/components/nospeakers/speakerSection4";
 export default function Speakers() {
   return (
     <div className="min-h-screen flex flex-col justify-start items-center bg-white relative">
-      {/* Titre avec positionnement pour ne pas repousser les sections */}
-      <h1 className="text-5xl font-bold absolute top-16">Speakers TechConf 2025</h1>
+      {/* Titre responsive */}
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold absolute top-16 px-4 sm:px-8 md:px-12 text-center">
+        Speakers TechConf 2025
+      </h1>
 
       {/* Sections des speakers */}
-      <div className="mt-12">
+      <div className="mt-32 sm:mt-24 md:mt-28">
         <SpeakerSection1 />
         <SpeakerSection2 />
         <SpeakerSection3 />
