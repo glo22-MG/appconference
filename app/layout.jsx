@@ -7,6 +7,7 @@ import { useState } from "react";
 
 import Home from "./page";
 import Programme from "./programme/page";
+import Speakers from "./speaker/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
