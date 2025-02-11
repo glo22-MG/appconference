@@ -4,7 +4,7 @@ import ContactFooter from "@/components/footercomponents/ContactFooter";
 import NewsLetterFooter from "@/components/footercomponents/NewsLetterFooter";
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-footerBg text-footerText">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <AboutFooter />

@@ -1,6 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import programmeData from "@/public/json/programme.json";
 import Session from "@/components/programme/programmeBlocks/Session";
+// import { Session } from "@/components/programme/programmeBlocks/Session";
 
 export default function SessionTabs() {
     return (

@@ -14,7 +14,7 @@ export default function Header({ changePage }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b">
+    <header className="fixed w-full bg-headerBg backdrop-blur-md z-50 border-b border-borderColor">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}

@@ -5,28 +5,32 @@
         "title": "Web & Mobile",
         "description": "Frontend, Backend, Mobile Apps",
         "sessions": 15,
-        "color": "bg-blue-500"
+        "colorScheme": "development",
+      "icon": "code"
       },
       {
         "id": "devops-cloud",
         "title": "DevOps & Cloud",
         "description": "Infrastructure, CI/CD, Cloud Native", 
         "sessions": 12,
-        "color": "bg-green-500"
+        "colorScheme": "ai",
+      "icon": "brain"
       },
       {
         "id": "data-ai", 
         "title": "Data & AI",
         "description": "Machine Learning, Big Data, Analytics",
         "sessions": 10,
-        "color": "bg-purple-500"
+        "colorScheme": "startup",
+      "icon": "rocket"
       },
       {
         "id": "security",
         "title": "Security", 
         "description": "Cybersécurité, Tests, Conformité",
         "sessions": 8,
-        "color": "bg-red-500"
+      "colorScheme": "design",
+      "icon": "palette"
       }
     ]
   }

@@ -1,5 +1,5 @@
 import Calendars from "@/components/home/homeBlocks/heroBlocks/Calendar";
-import SignIn from "@/components/home/homeBlocks/heroBlocks/SignIn";
+//import SignIn from "@/components/home/homeBlocks/heroBlocks/SignIn";
 
 export default function ContentHero(){
     return (
@@ -7,7 +7,7 @@ export default function ContentHero(){
                 <div className="max-w-3xl text-white">
         
                   <h1 className="text-4xl sm:text-6xl font-bold mb-6">
-                    TechConf 2024
+                    TechConf 2025
                     <br />
                     <span className="text-accent">L&apos;innovation en action</span>
                   </h1>
@@ -18,7 +18,7 @@ export default function ContentHero(){
         
                   <Calendars/>
         
-                  <SignIn/>
+                  
         
                 </div>
         </div>

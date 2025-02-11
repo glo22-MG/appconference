@@ -4,7 +4,7 @@ export default function AboutBlock() {
         <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">À propos de l&apos;événement</h2>
         <p className="text-lg text-muted-foreground mb-8">
-          TechConf 2024 rassemble les meilleurs experts du monde technologique
+          TechConf 2025 rassemble les meilleurs experts du monde technologique
           pour trois jours de conférences, ateliers et networking. Une
           opportunité unique de découvrir les dernières innovations et
           tendances du secteur.
