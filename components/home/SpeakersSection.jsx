@@ -11,7 +11,7 @@ export default function SpeakersSection() {
           <h2 className="text-3xl font-bold mb-4">Nos Speakers</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Découvrez les experts qui partageront leur vision et leur expérience
-            lors de TechConf 2024.
+            lors de TechConf 2025.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
