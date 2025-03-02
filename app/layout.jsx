@@ -8,38 +8,41 @@ import { useState } from "react";
 import Home from "./page";
 import Programme from "./programme/page";
 import Speakers from "./speaker/page";
+import Contact from "./contact/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
 //export const metadata = {
- // title: "TechConf 2024 - La conférence tech de l'année",
- // description:
-   // "Rejoignez-nous pour la plus grande conférence technologique de l'année. Découvrez les dernières innovations et rencontrez des experts du monde entier.",
+// title: "TechConf 2024 - La conférence tech de l'année",
+// description:
+// "Rejoignez-nous pour la plus grande conférence technologique de l'année. Découvrez les dernières innovations et rencontrez des experts du monde entier.",
 //};
 
 export default function RootLayout() {
-  const [page, setPage] = useState("home");
+ const [page, setPage] = useState("home");
 
-  const renderPage = () => {
-    switch (page) {
-      case "home":
-        return <Home />;
-      case "programme":
-        return <Programme />;
-      case "speakers":
-        return <Speakers />;
-      
-      default:
-        return <Home />;
-    }
-  };
-  return (
-    <html lang="fr">
-      <body className={inter.className}>
-        <Header changePage={setPage} currentPage={page} />
-        <main className="min-h-screen pt-16">{renderPage()}</main>
-        <Footer changePage={setPage} />
-      </body>
-    </html>
-  );
+ const renderPage = () => {
+  switch (page) {
+   case "home":
+    return <Home />;
+   case "programme":
+    return <Programme />;
+   case "speakers":
+    return <Speakers />;
+   case "contact":
+    return <Contact />;
+
+   default:
+    return <Home />;
+  }
+ };
+ return (
+  <html lang="fr">
+   <body className={inter.className}>
+    <Header changePage={setPage} currentPage={page} />
+    <main className="min-h-screen pt-16">{renderPage()}</main>
+    <Footer changePage={setPage} />
+   </body>
+  </html>
+ );
 }
