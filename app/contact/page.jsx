@@ -14,7 +14,7 @@ export default function Contacts() {
     backgroundImage: "url('/images/backGrnd.webp')", // L'image utilisée comme fond
    }}
   >
-   <Contact className="Z-index : 100" />
+   <Contact />
   </div>
  );
 }
