@@ -17,28 +17,14 @@ const inter = Inter({ subsets: ["latin"] });
    // "Rejoignez-nous pour la plus grande conférence technologique de l'année. Découvrez les dernières innovations et rencontrez des experts du monde entier.",
 //};
 
-export default function RootLayout() {
-  const [page, setPage] = useState("home");
-
-  const renderPage = () => {
-    switch (page) {
-      case "home":
-        return <Home />;
-      case "programme":
-        return <Programme />;
-      case "speakers":
-        return <Speakers />;
-      
-      default:
-        return <Home />;
-    }
-  };
+export default function RootLayout({children}) {
+ 
   return (
     <html lang="fr">
       <body className={inter.className}>
-        <Header changePage={setPage} currentPage={page} />
-        <main className="min-h-screen pt-16">{renderPage()}</main>
-        <Footer changePage={setPage} />
+        <Header />
+        <main className="min-h-screen pt-16">{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -1,16 +1,11 @@
-"use client";
+'use client';
+import { useState } from 'react';
+import Logo from './headercomponents/Logo';
+import DesktopNavigation from './headercomponents/DesktopNavigation';
+import MobileNavigation from './headercomponents/MobileNavigation';
+import MenuButton from './headercomponents/MenuButton';
 
-//Le composant principal qui inclut tous les autres composants.
-
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import Logo from "./headercomponents/Logo";
-import DesktopNavigation from "./headercomponents/DesktopNavigation";
-import MobileNavigation from "./headercomponents/MobileNavigation";
-import MenuButton from "./headercomponents/MenuButton";
-//import NavBar from "./NavBar";
-
-export default function Header({ changePage }) {
+export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -20,16 +15,15 @@ export default function Header({ changePage }) {
           {/* Logo */}
           <Logo />
 
-          {/* Desktop Navigation */}
-          <DesktopNavigation changePage={changePage} />
+          {/* Navigation bureau */}
+          <DesktopNavigation />
 
-          {/* Mobile menu button */}
+          {/* Bouton menu mobile */}
           <MenuButton isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && <MobileNavigation changePage={changePage} setIsMenuOpen={setIsMenuOpen} />}
-        
+        {/* Navigation mobile */}
+        {isMenuOpen && <MobileNavigation setIsMenuOpen={setIsMenuOpen} />}
       </nav>
     </header>
   );
