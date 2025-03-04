@@ -1,23 +1,30 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { Inter } from "next/font/google";
+'use client';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { useState } from 'react';
 
-import "./globals.css";
-const inter = Inter({ subsets: ["latin"] });
+import Home from './page';
+import Programme from './programme/page';
+import Speakers from './speaker/page';
 
-export const metadata = {
-    title: "Biblio-app",
-    description: "Demo Cours Programmation web avancé",
-};
+const inter = Inter({ subsets: ['latin'] });
+
+//export const metadata = {
+// title: "TechConf 2024 - La conférence tech de l'année",
+// description:
+// "Rejoignez-nous pour la plus grande conférence technologique de l'année. Découvrez les dernières innovations et rencontrez des experts du monde entier.",
+//};
 
 export default function RootLayout({ children }) {
-    return (
-        <html lang="en">
-            <body className="flex flex-col min-h-screen">
-                <Header />
-                <main className="flex-1">{children}</main>
-                <Footer />
-            </body>
-        </html>
-    );
+  return (
+    <html lang="fr">
+      <body className={inter.className}>
+        <Header />
+        <main className="min-h-screen pt-16">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
 }
