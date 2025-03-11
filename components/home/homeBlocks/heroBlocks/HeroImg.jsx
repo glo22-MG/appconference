@@ -1,18 +1,24 @@
-// Composant AboutSection
-import Image from "next/image";
+'use client';
+// Composant HeroImage avec adaptation au thème
+import Image from 'next/image';
+import { useMyContext } from '@/provider/MyContextProvider';
 
 export default function HeroImage() {
-    return (
+  const { theme } = useMyContext();
 
-        <div className="absolute inset-0">
-            <Image
-                src="/images/techimage.webp"
-                alt="Conference background"
-                className="object-cover mix-blend-overlay"
-                fill
-                priority
-            />
-        </div>
-
-    );
+  return (
+    <div className="absolute inset-0">
+      <Image
+        src="/images/techimage.webp"
+        alt="Conference background"
+        className={`object-cover ${
+          theme === 'light'
+            ? 'mix-blend-multiply opacity-90' // Changé pour être plus visible en mode clair
+            : 'mix-blend-overlay opacity-70' // Conserve la visibilité en mode sombre
+        }`}
+        fill
+        priority
+      />
+    </div>
+  );
 }

@@ -1,30 +1,21 @@
 'use client';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { useState } from 'react';
-
-import Home from './page';
-import Programme from './programme/page';
-import Speakers from './speaker/page';
+import { appWithTranslation } from 'next-i18next';
+import '../i18next'; // Import du fichier de configuration i18next
+import MyContextProvider from '@/provider/MyContextProvider';
+import Body from '@/components/Body';
 
 const inter = Inter({ subsets: ['latin'] });
 
-//export const metadata = {
-// title: "TechConf 2024 - La conférence tech de l'année",
-// description:
-// "Rejoignez-nous pour la plus grande conférence technologique de l'année. Découvrez les dernières innovations et rencontrez des experts du monde entier.",
-//};
-
-export default function RootLayout({ children }) {
+function RootLayout({ children }) {
   return (
-    <html lang="fr">
-      <body className={inter.className}>
-        <Header />
-        <main className="min-h-screen pt-16">{children}</main>
-        <Footer />
-      </body>
+    <html lang="fr" className={inter.className}>
+      <MyContextProvider>
+        <Body>{children}</Body>
+      </MyContextProvider>
     </html>
   );
 }
+
+export default appWithTranslation(RootLayout);
