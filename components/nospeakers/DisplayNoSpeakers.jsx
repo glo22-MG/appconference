@@ -1,18 +1,19 @@
-import DisplaySpeaker from "@/components/home/DisplaySpeaker";
+import DisplaySpeaker from '@/components/home/DisplaySpeaker';
 
-export default function DisplayNoSpeakers({speakerName,speakerAbout,speakerData}) {
-
+export default function DisplayNoSpeakers({
+  speakerName,
+  speakerAbout,
+  speakerData,
+}) {
   return (
     <div className="flex justify-center items-center w-full min-h-screen bg-white shadow-lg mb-4">
       {/* Conteneur pour la partie gauche et droite */}
-      <div className="flex flex-col md:flex-row w-4/5 gap-8 ml-10 max-h-full justify-center"> 
+      <div className="flex flex-col md:flex-row w-4/5 gap-8 ml-10 max-h-full justify-center">
         {/* Partie gauche (passera en dessous sur les petits écrans) */}
         <div className="w-full md:w-3/5 p-8 flex items-center justify-center rounded-lg shadow h-full">
           <div>
             <h2 className="text-2xl font-bold mb-4">{speakerName}</h2>
-            <p className="text-gray-700">
-                {speakerAbout}
-            </p>
+            <p className="text-gray-700">{speakerAbout}</p>
           </div>
         </div>
 

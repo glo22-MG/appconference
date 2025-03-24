@@ -1,7 +1,6 @@
-
-"use client";
-import speakersData from "@/public/json/speakers.json";
-import DisplaySpeaker from "./DisplaySpeaker";
+'use client';
+import speakersData from '@/public/json/speakers.json';
+import DisplaySpeaker from './DisplaySpeaker';
 
 export default function SpeakersSection() {
   return (
@@ -16,7 +15,10 @@ export default function SpeakersSection() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {speakersData.speakers.map((speaker) => (
-            <DisplaySpeaker key={`${speaker.name}-${speaker.role}`} speaker={speaker} />
+            <DisplaySpeaker
+              key={`${speaker.name}-${speaker.role}`}
+              speaker={speaker}
+            />
           ))}
         </div>
       </div>

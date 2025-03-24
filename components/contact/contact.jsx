@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
@@ -9,14 +9,14 @@ export default function Contact() {
     handleSubmit,
     reset,
     watch,
-    formState: { errors, isSubmitting }
+    formState: { errors, isSubmitting },
   } = useForm({
     defaultValues: {
       nom: '',
       email: '',
       objet: '',
-      message: ''
-    }
+      message: '',
+    },
   });
 
   const [status, setStatus] = useState(null);
@@ -25,12 +25,12 @@ export default function Contact() {
   const sendMail = async (formData) => {
     try {
       setStatus({ type: 'pending', message: 'Envoi en cours...' });
-      
+
       const templateParams = {
         name: formData.nom,
         email: formData.email,
         subject: formData.objet,
-        message: formData.message
+        message: formData.message,
       };
 
       const response = await emailjs.send(
@@ -40,19 +40,22 @@ export default function Contact() {
         'h4CTjEfgsIK9rA1jA'
       );
 
-      setStatus({ type: 'success', message: 'Votre message a été envoyé avec succès!' });
+      setStatus({
+        type: 'success',
+        message: 'Votre message a été envoyé avec succès!',
+      });
       reset();
-      
+
       // Effacer le message après 5 secondes
       setTimeout(() => {
         setStatus(null);
       }, 5000);
-      
     } catch (error) {
       console.error('Erreur:', error);
-      setStatus({ 
-        type: 'error', 
-        message: 'Une erreur est survenue lors de l\'envoi. Veuillez réessayer plus tard.'
+      setStatus({
+        type: 'error',
+        message:
+          "Une erreur est survenue lors de l'envoi. Veuillez réessayer plus tard.",
       });
     }
   };

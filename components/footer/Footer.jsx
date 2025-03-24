@@ -1,7 +1,7 @@
-import AboutFooter from "@/components/footercomponents/AboutFooter";
-import LienRapideFooter from "@/components/footercomponents/LienRapideFooter";
-import ContactFooter from "@/components/footercomponents/ContactFooter";
-import NewsLetterFooter from "@/components/footercomponents/NewsLetterFooter";
+import AboutFooter from '@/components/footer/footercomponents/AboutFooter';
+import LienRapideFooter from '@/components/footer/footercomponents/LienRapideFooter';
+import ContactFooter from '@/components/footer/footercomponents/ContactFooter';
+import NewsLetterFooter from '@/components/footer/footercomponents/NewsLetterFooter';
 export default function Footer() {
   return (
     <footer className="bg-footerBg text-footerText">
@@ -11,7 +11,6 @@ export default function Footer() {
           <NewsLetterFooter />
           <ContactFooter />
           <LienRapideFooter />
-          
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
           <p>© 2025 TechConf. Tous droits réservés.</p>

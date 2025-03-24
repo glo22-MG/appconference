@@ -1,13 +1,13 @@
 'use client';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-import { usePathname } from 'next/navigation'; // Remplacez useRouter par usePathname
+//import { usePathname } from 'next/navigation'; // Remplacez useRouter par usePathname
 import { useState, useEffect } from 'react';
 
 export default function DesktopNavigation() {
   const { t, i18n } = useTranslation('navigation');
   const [currentLanguage, setCurrentLanguage] = useState('fr');
-  const pathname = usePathname(); // Utilisez usePathname au lieu de useRouter
+  //  const pathname = usePathname(); // Utilisez usePathname au lieu de useRouter
 
   // Fonction pour changer de langue
   const changeLanguage = (lng) => {

@@ -1,6 +1,6 @@
-"use client";
-import scheduleData from "@/public/json/schedule.json";
-import DisplayScheduleDay from "./DisplayScheduleDay";
+'use client';
+import scheduleData from '@/public/json/schedule.json';
+import DisplayScheduleDay from './DisplayScheduleDay';
 
 export default function ScheduleSection() {
   return (
@@ -14,10 +14,10 @@ export default function ScheduleSection() {
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {[1, 2].map((day) => (
-            <DisplayScheduleDay 
-              key={`day-${day}`} 
-              day={day} 
-              events={scheduleData.schedule.filter((item) => item.day === day)} 
+            <DisplayScheduleDay
+              key={`day-${day}`}
+              day={day}
+              events={scheduleData.schedule.filter((item) => item.day === day)}
             />
           ))}
         </div>

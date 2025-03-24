@@ -11,6 +11,13 @@ const inter = Inter({ subsets: ['latin'] });
 function RootLayout({ children }) {
   return (
     <html lang="fr" className={inter.className}>
+      <head>
+        <title>TechConf 2025</title>
+        <meta
+          name="description"
+          content="Bienvenue à TechConf 2025, la conférence technologique de l'année. Découvrez les dernières innovations et rencontrez des experts du secteur."
+        />
+      </head>
       <MyContextProvider>
         <Body>{children}</Body>
       </MyContextProvider>
