@@ -1,0 +1,32 @@
+{
+  "speakers": [
+    {
+      "name": "Marie Dubois",
+      "role": "CTO @ TechCorp",
+      "image": "/images/speakers/speaker2.webp",
+      "topic": "L'avenir de l'IA",
+      "about": "L'intelligence artificielle est en constante évolution et continue de transformer de nombreux secteurs. De l'automatisation des processus à la prise de décisions stratégiques, l'IA devient un acteur central dans le monde moderne. L'avenir de l'IA se dessine à travers des systèmes plus intelligents, capables de comprendre et d'interagir avec les humains de manière plus naturelle. Cependant, des défis majeurs demeurent, notamment en matière d'éthique et de régulation. Comment nous préparer à ces changements et tirer parti des avantages de l'IA tout en gérant les risques ? Le futur est prometteur, mais il nécessite une réflexion approfondie et une collaboration entre experts et régulateurs.\nLes technologies évoluent à un rythme effréné, et l'IA n'est plus une simple tendance, mais un véritable moteur d'innovation."
+    },
+    {
+      "name": "Thomas Martin",
+      "role": "Lead Developer @ StartupXYZ",
+      "image": "/images/speakers/speaker1.webp",
+      "topic": "Architecture Cloud Native",
+      "about": "L'architecture Cloud Native transforme la manière dont nous concevons et déployons des applications. En adoptant des pratiques comme la conteneurisation, l'automatisation et les microservices, les entreprises peuvent améliorer la flexibilité et la résilience de leurs systèmes. Le cloud devient l'infrastructure de base pour un nombre croissant d'applications modernes. Cependant, cette transition présente des défis, notamment en termes de gestion des coûts, de sécurité et de performance. Comment tirer pleinement parti de ces nouvelles architectures tout en garantissant leur scalabilité et leur efficacité ? Les solutions Cloud Native ouvrent de nouvelles possibilités pour les entreprises, mais elles nécessitent des stratégies solides et une connaissance approfondie des technologies cloud.\nLes entreprises qui réussissent à mettre en œuvre une architecture Cloud Native bénéficient de gains de productivité et d'une meilleure capacité à innover. Toutefois, la gestion de l'infrastructure et la sécurité des données restent des enjeux majeurs dans ce contexte."
+    },
+    {
+      "name": "Sophie Bernard",
+      "role": "Product Manager @ BigTech",
+      "image": "/images/speakers/speaker3.webp",
+      "topic": "Design System à grande échelle",
+      "about": "Un Design System efficace est essentiel pour maintenir la cohérence et l'harmonie visuelle à grande échelle, surtout dans des organisations de grande taille. Il permet d'unifier les interfaces utilisateurs tout en réduisant les coûts de développement et en améliorant l'expérience client. Cependant, créer un Design System qui soit adaptable à tous les produits et équipes d'une grande entreprise n'est pas sans défis. Il faut tenir compte des besoins variés des différentes équipes tout en assurant une standardisation. Comment gérer les évolutions constantes des exigences et s'assurer que le Design System reste flexible tout en garantissant sa stabilité ? Ce sujet explore les bonnes pratiques et les erreurs courantes à éviter lors de la mise en place d'un Design System à grande échelle.\nLes Design Systems sont devenus incontournables pour les entreprises cherchant à créer des expériences utilisateurs cohérentes et efficaces. Cependant, leur mise en place nécessite une collaboration étroite entre les designers, les développeurs et les équipes produit."
+    },
+    {
+      "name": "Viviane Banks",
+      "role": "Data scientist @ IBM",
+      "image": "/images/speakers/speaker4.webp",
+      "topic": "L'impact du Big Data dans le monde",
+      "about": "Le Big Data transforme notre manière de prendre des décisions, de comprendre les comportements humains et d'analyser les tendances économiques, sociales et politiques. Les données massives permettent aux entreprises de mieux comprendre leurs clients et d'optimiser leurs processus. Mais, avec une telle quantité de données, des questions sur la gestion, la protection et l'utilisation éthique des informations surgissent. Comment les entreprises peuvent-elles exploiter le Big Data sans compromettre la confidentialité et l'intégrité des données ? Ce sujet explore comment le Big Data impacte diverses industries et comment nous devons nous adapter à cette ère de données omniprésentes.\nL'impact du Big Data va bien au-delà du secteur technologique. Des domaines comme la santé, l'éducation, l'agriculture et même la politique sont influencés par l'exploitation des données massives. Cependant, cette puissance implique une responsabilité accrue dans le traitement des données. Lors de cette présentation, nous discuterons des implications du Big Data sur notre quotidien."
+    }
+  ]
+}
