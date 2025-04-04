@@ -1,4 +1,4 @@
-Sitemap: https://localhost:3000/sitemap.xml
+Sitemap: https://appconference.vercel.app/sitemap.xml
 # Autoriser tous les robots
 User-agent: *
 Allow: /
