@@ -1,8 +1,8 @@
-import HeroSection from "@/components/home/HeroSection";
-import KeySection from "@/components/home/KeySection";
-import SpeakersSection from "@/components/home/SpeakersSection";
-import  AboutSection  from "@/components/home/AboutSection";
-import ScheduleSection from "@/components/home/ScheduleSection";
+import HeroSection from '@/components/home/HeroSection';
+import KeySection from '@/components/home/KeySection';
+import SpeakersSection from '@/components/home/SpeakersSection';
+import AboutSection from '@/components/home/AboutSection';
+import ScheduleSection from '@/components/home/ScheduleSection';
 
 export const metadata = {
   metadataBase: new URL('http://acme.com'),
@@ -19,15 +19,16 @@ export const metadata = {
       '/speaker4.webp',
     ],
   },
+  manifest: './manifest.json',
 };
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <KeySection/>
+      <KeySection />
       <SpeakersSection />
-      <AboutSection/>
+      <AboutSection />
       <ScheduleSection />
     </>
   );
