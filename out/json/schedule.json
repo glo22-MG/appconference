@@ -1,0 +1,40 @@
+{
+    "schedule": [
+      {
+        "time": "09:00",
+        "title": "Ouverture des portes",
+        "description": "Accueil des participants et petit-déjeuner",
+        "day": 1
+      },
+      {
+        "time": "10:00",
+        "title": "Keynote d'ouverture",
+        "description": "Les tendances tech de 2024 par Marie Dubois",
+        "day": 1
+      },
+      {
+        "time": "11:30",
+        "title": "Sessions parallèles",
+        "description": "IA, Cloud, Sécurité, DevOps",
+        "day": 1
+      },
+      {
+        "time": "09:30",
+        "title": "Workshops",
+        "description": "Sessions pratiques en petits groupes",
+        "day": 2
+      },
+      {
+        "time": "14:00",
+        "title": "Table ronde",
+        "description": "L'avenir du développement web",
+        "day": 2
+      },
+      {
+        "time": "16:30",
+        "title": "Clôture",
+        "description": "Remise des prix et networking",
+        "day": 2
+      }
+    ]
+  }

@@ -1,0 +1,36 @@
+{
+    "tracks": [
+      {
+        "id": "web-mobile",
+        "title": "Web & Mobile",
+        "description": "Frontend, Backend, Mobile Apps",
+        "sessions": 15,
+        "colorScheme": "development",
+      "icon": "code"
+      },
+      {
+        "id": "devops-cloud",
+        "title": "DevOps & Cloud",
+        "description": "Infrastructure, CI/CD, Cloud Native", 
+        "sessions": 12,
+        "colorScheme": "ai",
+      "icon": "brain"
+      },
+      {
+        "id": "data-ai", 
+        "title": "Data & AI",
+        "description": "Machine Learning, Big Data, Analytics",
+        "sessions": 10,
+        "colorScheme": "startup",
+      "icon": "rocket"
+      },
+      {
+        "id": "security",
+        "title": "Security", 
+        "description": "Cybersécurité, Tests, Conformité",
+        "sessions": 8,
+      "colorScheme": "design",
+      "icon": "palette"
+      }
+    ]
+  }
