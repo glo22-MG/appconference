@@ -1,4 +1,4 @@
-import Contact from "@/components/Contact";
+import Contact from '@/components/contact';
 
 export const metadata = {
   metadataBase: new URL('http://acme.com'),
@@ -11,5 +11,5 @@ export const metadata = {
 };
 
 export default function Page() {
- return <Contact />;
+  return <Contact />;
 }
